@@ -1,5 +1,6 @@
-# Project Responsive Web Design using Bootstrap
-## Date:21-12-2024
+# Ex08 CAMU Schedule using Bootstrap
+## Date:
+28-05-2026
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -27,286 +28,211 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 
-### Discover Page
 ```
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribbble Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>CAMU Schedule</title>
+
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        body{
+            background-color:#f5f5f5;
+            padding-top:20px;
+        }
+
+        .page-header{
+            background:#337ab7;
+            color:white;
+            padding:15px;
+            border-radius:5px;
+            margin-top:0;
+        }
+
+        .table th{
+            text-align:center;
+            vertical-align:middle !important;
+        }
+
+        .table td{
+            text-align:center;
+            vertical-align:middle !important;
+        }
+
+        .subject{
+            background-color:#5bc0de;
+            color:white;
+            font-weight:bold;
+        }
+
+        .lunch{
+            background-color:#f0ad4e;
+            color:white;
+            font-weight:bold;
+        }
+
+        .course-table th{
+            background-color:#337ab7;
+            color:white;
+        }
+
+        .timetable th{
+            background-color:#337ab7;
+            color:white;
+        }
+    </style>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Dribbble</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#cards">Discover</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="jobs.html">Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.html">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div class="container">
 
-<div class="container text-center py-5">
-    <h1>Discover the world’s top designers and creatives</h1>
-    <p class="text-muted">Showcase your work, discover new projects, and get inspired.</p>
+    <div class="page-header text-center">
+        <h2>CAMU Schedule - Even Semester 2025-2026</h2>
+        <h4>Student Time Table - Anto Williams S(212224240012)</h4>
+    </div>
+
+    <div class="panel panel-primary">
+
+        <div class="panel-heading">
+            <h3 class="panel-title">Weekly Schedule</h3>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered timetable">
+
+                    <tr>
+                        <th>DAY / TIME</th>
+                        <th>8 - 10</th>
+                        <th>10 - 12</th>
+                        <th>12 - 1</th>
+                        <th>1 - 3</th>
+                        <th>3 - 5</th>
+                    </tr>
+
+                    <tr>
+                        <th>Monday</th>
+                        <td>-</td>
+                        <td class="subject">Computer Networks</td>
+                        <td rowspan="6" class="lunch">Lunch</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Tuesday</th>
+                        <td class="subject">FWAD</td>
+                        <td class="subject">Python Programming</td>
+                        <td class="subject">Computer Networks</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Wednesday</th>
+                        <td class="subject">FWAD</td>
+                        <td>-</td>
+                        <td class="subject">Mentor Meet</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Thursday</th>
+                        <td>-</td>
+                        <td class="subject">Python Programming</td>
+                        <td class="subject">Computer Networks</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <th>Friday</th>
+                        <td class="subject">FWAD</td>
+                        <td class="subject">Python Programming</td>
+                        <td>-</td>
+                        <td class="subject">Computer Networks</td>
+                    </tr>
+
+                    <tr>
+                        <th>Saturday</th>
+                        <td class="subject">FWAD</td>
+                        <td>-</td>
+                        <td class="subject">Python Programming</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="panel panel-info">
+
+        <div class="panel-heading">
+            <h3 class="panel-title">Course Details</h3>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="table-responsive">
+
+                <table class="table table-bordered course-table">
+
+                    <tr>
+                        <th>S.No</th>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>19AI414</td>
+                        <td>Fundamentals of Web Application Development</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>19CS301</td>
+                        <td>Python Programming</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>19CS406</td>
+                        <td>Computer Networks</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>ECA-M</td>
+                        <td>Mentor Meet</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<div id="cards" class="container">
-    <div class="row g-4">
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="onepiece.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">One Piece</h5>
-                    <p class="card-text">The One Piece is real.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="naruto.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">Naruto</h5>
-                    <p class="card-text">Dattebayo!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="aot.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">Attack on Titan</h5>
-                    <p class="card-text">Shingeki no Kyojin!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="bleach.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">Bleach</h5>
-                    <p class="card-text">I am a Soul Reaper!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="baki.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">Baki</h5>
-                    <p class="card-text">Strongest Under the Heavens!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="card">
-                <img src="vaga.png" class="card-img-top" alt="Design">
-                <div class="card-body">
-                    <h5 class="card-title">Vagabond</h5>
-                    <p class="card-text">I am going to be the strongest man in the world!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="footer mt-5">
-    <div class="container text-center">
-        <p>Designed by Akshay M(24900489)</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-```
-
-### Job Page
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jobs - Dribbble Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Dribbble Clone</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Discover</a></li>
-                <li class="nav-item"><a class="nav-link active" href="jobs.html">Jobs</a></li>
-                <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-<div class="container my-5">
-    <h1 class="text-center">Find Your Dream Job</h1>
-    <p class="text-center text-muted">Explore design-related job opportunities around the globe.</p>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Search for jobs..." aria-label="Search" aria-describedby="search-button">
-        <button class="btn btn-primary" type="button" id="search-button">Search</button>
-    </div>
-</div>
-<footer class="footer mt-5">
-    <div class="container text-center">
-        <p>Designed by Akshay M(24900489)</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-```
-
-### SignUp Page
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Dribbble Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Dribbble Clone</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Discover</a></li>
-                <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
-                <li class="nav-item"><a class="nav-link active" href="signup.html">Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container my-5">
-    <h1 class="text-center">Create an Account</h1>
-    <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-    </form>
-</div>
-
-<footer class="footer mt-5">
-    <div class="container text-center">
-        <p>Designed by Akshay M(24900489)</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
-```
-
-### Login Page
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Dribbble Clone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-light border-bottom">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Dribbble Clone</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Discover</a></li>
-                <li class="nav-item"><a class="nav-link" href="jobs.html">Jobs</a></li>
-                <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
-                <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="container my-5">
-    <h1 class="text-center">Log In</h1>
-    <form>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Log In</button>
-    </form>
-</div>
-
-<footer class="footer mt-5">
-    <div class="container text-center">
-        <p>Designed by Akshay M(24900489)</p>
-    </div>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 ```
 ## OUTPUT:
-
-![Screenshot (87)](https://github.com/user-attachments/assets/8ea12802-95f0-4035-a980-f04592073ccf)
-
-![alt text](<Screenshot (84).png>)
-
-![alt text](<Screenshot (85).png>)
-
-![alt text](<Screenshot (86).png>)
+![alt text](<Screenshot 2026-05-29 020341.png>)
 
 ## RESULT:
-The Project for responsive web design using Bootstrap is completed successfully.
+A responsive and visually appealing CAMU Schedule web page using Bootstrap is designed successfully.
