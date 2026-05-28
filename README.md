@@ -3,7 +3,7 @@
 28-05-2026
 
 ## AIM:
-To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
+To design a responsive and visually appealing CAMU Schedule using Bootstrap.
 
 
 ## DESIGN STEPS:
